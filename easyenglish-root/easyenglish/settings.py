@@ -14,6 +14,11 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 910c7198574b5895c608fa27864b64ea6f9c3168
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -35,8 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'home.apps.HomeConfig',
     'lessons.apps.LessonsConfig',
+=======
+>>>>>>> 910c7198574b5895c608fa27864b64ea6f9c3168
 ]
 
 MIDDLEWARE = [
@@ -54,7 +62,11 @@ ROOT_URLCONF = 'easyenglish.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ['templates'],
+=======
+        'DIRS': [],
+>>>>>>> 910c7198574b5895c608fa27864b64ea6f9c3168
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,12 +87,17 @@ WSGI_APPLICATION = 'easyenglish.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'easyenglishdb',
         'USER': 'webuser',
         'PASSWORD': 'inferno59',
         'HOST': 'localhost',
         'PORT': '5432'
+=======
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>> 910c7198574b5895c608fa27864b64ea6f9c3168
     }
 }
 
@@ -121,6 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+<<<<<<< HEAD
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATICFILES_DIRS = [
     str(BASE_DIR / 'static')
@@ -131,3 +149,6 @@ STATIC_ROOT = str(BASE_DIR / 'static/assets')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR / 'static' / 'media')
+=======
+STATIC_URL = '/static/'
+>>>>>>> 910c7198574b5895c608fa27864b64ea6f9c3168
